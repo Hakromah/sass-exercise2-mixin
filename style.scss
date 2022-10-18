@@ -1,0 +1,67 @@
+@use "sass:color";
+$base: green;
+$color: blue;
+
+@mixin article-card($color, $border-color:$base, $font-size: 1rem){
+    border:2px solid color.adjust($color, $lightness: +10%);
+    margin: 15px,
+
+};
+
+.content-1 {
+    @include article-card($base);
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding: auto;
+    p{
+        padding: 10px;
+    }
+    
+
+    .artc-1 {
+        border-right: 2px solid $base;
+        color:$color;
+    }
+    .artc-2 {
+        border-right: 2px solid $base;
+        p{
+            color: red;
+        }
+    }
+    .artc-3 {
+        border-right: 2px solid $base;
+        p{
+            color: $color;
+        }
+    }
+    .artc-4 {
+        p{
+            color: red;
+        }
+    }
+}
+
+.content-2 {
+    @include article-card($color);
+    p{
+        color: $base;
+        text-align: center;
+        font-size: 24px;
+    }
+}
+
+.main {
+    border: 1px solid red;
+    width: 90%;
+    margin: auto;
+    .title {
+        color: $base;
+        margin:auto;
+        padding-top: 2rem;
+        width: fit-content;
+        text-align: center;
+        border-bottom: 2px solid $color;
+    }
+
+}
