@@ -1,31 +1,26 @@
 .content-1 {
-  border: 2px solid #00b300;
-  margin: 15px;
   display: flex;
   flex-direction: row;
   text-align: center;
-  padding: auto;
+  margin: 15px;
 }
 .content-1 p {
-  padding: 10px;
+  padding: 15px;
 }
 .content-1 .artc-1 {
-  border-right: 2px solid green;
+  border: 2px solid #00b300;
   color: blue;
 }
 .content-1 .artc-2 {
-  border-right: 2px solid green;
-}
-.content-1 .artc-2 p {
+  border: 2px solid #00b300;
   color: red;
 }
 .content-1 .artc-3 {
-  border-right: 2px solid green;
-}
-.content-1 .artc-3 p {
+  border: 2px solid #00b300;
   color: blue;
 }
-.content-1 .artc-4 p {
+.content-1 .artc-4 {
+  border: 2px solid #00b300;
   color: red;
 }
 
@@ -40,17 +35,17 @@
 }
 
 .main {
-  border: 1px solid red;
-  width: 90%;
+  border: 2px solid #ff3333;
+  width: 85%;
   margin: auto;
 }
 .main .title {
   color: green;
   margin: auto;
   padding-top: 2rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;
   text-align: center;
   border-bottom: 2px solid blue;
-}
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
